@@ -20,6 +20,20 @@
     width:100%;
     height: 8%;
 }
+.font-menu {
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+.hanibknav {
+    background-color: crimson;
+}
+.hanibknav a span {
+    color: #fff;
+}
+.hanibknav ul li a:hover{
+    color: #ffffff9c;
+} 
 
 header .max-widith {
     display: flex;
