@@ -31,9 +31,7 @@
 .hanibknav a span {
     color: #fff;
 }
-.hanibknav ul li a:hover{
-    color: #ffffff9c;
-} 
+
 
 header .max-widith {
     display: flex;
@@ -42,12 +40,15 @@ header .max-widith {
 }
 
 
-header .max-widith div{
-    width: 50%;
+.mainnav .logo{
+    width: 30%;
     height: 100%;
     padding: 0 10px;
 }
-header .max-widith div:nth-child(2) {
+.mainnav .half-nav{
+    width: 70%;
+    height: 100%;
+    padding: 0 10px;
     display: flex;
     justify-content: flex-end;
 }
@@ -67,14 +68,18 @@ ul {
     list-style: none;
     display: flex;
 }
-ul li a {
+.mainnav .half-nav ul li a {
+    display: block;
     padding: 0px 5px;
     font-size: 1em;
     font-weight: 500px;
 
 }
-ul li a:hover {
+.mainnav .half-nav ul li a:hover {
     color:  crimson;
+}
+.hanibknav ul li a:hover{
+    color: #ffffffd0;
 }
 
 .home section {
@@ -189,4 +194,18 @@ section .max-widith button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media(max-width: 947px){
+    
+.mainnav .menu-ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top:80px;
+    transition: all 0.3s ease;
+}
 }
