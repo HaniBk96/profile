@@ -24,6 +24,7 @@
     font-size: 23px;
     color: #fff;
     cursor: pointer;
+    display: none;
 }
 .hanibknav {
     background-color: crimson;
@@ -207,5 +208,9 @@ section .max-widith button:hover {
     text-align: center;
     padding-top:80px;
     transition: all 0.3s ease;
+}
+.font-menu {
+    display: block;
+    z-index: 999;
 }
 }
