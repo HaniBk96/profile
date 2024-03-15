@@ -9,7 +9,9 @@
 .home {
     height: 100vh;
     width: 100%;
-    background-color:rgb(19, 18, 18);
+    background-image: url(/imges/back-g3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color:#fff;
 
 }
@@ -209,8 +211,24 @@ section .max-widith button:hover {
     padding-top:80px;
     transition: all 0.3s ease;
 }
+.mainnav .menu-ul.active{
+    left: 0;
+}
 .font-menu {
     display: block;
     z-index: 999;
 }
+.font-menu.active::before {
+    content: "\f00d";
+}
+
+.mainnav .half-nav .menu-ul{
+    display: block;
+}
+.mainnav .half-nav .menu-ul li a {
+    display: inline-block;
+    font-size: 25px;
+    margin: 15px auto;
+}
+
 }
