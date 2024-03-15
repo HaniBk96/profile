@@ -1,9 +1,10 @@
+
 * {
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:sans-serif;
 }
 
 .home {
@@ -34,6 +35,10 @@
 .hanibknav a span {
     color: #fff;
 }
+.mainnav.hanibknav ul li a:hover {
+    color: #fff;
+}
+
 
 
 header .max-widith {
@@ -79,11 +84,9 @@ ul {
 
 }
 .mainnav .half-nav ul li a:hover {
-    color:  crimson;
+    color:  rgb(250, 10, 10);
 }
-.hanibknav ul li a:hover{
-    color: #ffffffd0;
-}
+
 
 .home section {
     width: 100%;
@@ -110,32 +113,18 @@ section .max-widith div {
 }
 section .max-widith h3 {
 
-    padding: 10px 0;
+    padding: 10px;
 }
 section .max-widith h3 span {
-    transition: all 5s linear;
-    animation-name: change;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    color: crimson;
 }
 
-@keyframes change {
-    0% {
-        background-color: red;
-    }
-    50% {
-        background-color: blue;
-    }
-    100% {
-        background-color: yellow;
-    }
-    
-    
-}                                    /* hader */
+
+                                 /* hader */
 
 section .max-widith button {
     display: block;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 10px;
     background-color:rgb(216, 22, 22) ;
     color: #fff;
@@ -218,7 +207,8 @@ section .max-widith button:hover {
     display: block;
     z-index: 999;
 }
-.font-menu.active::before {
+
+.font-menu i.active:before {
     content: "\f00d";
 }
 
