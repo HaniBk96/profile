@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
-    text-decoration: none;
     font-family:sans-serif;
 }
 
@@ -16,6 +15,12 @@
     color:#fff;
 
 }
+.about, .Serveses, .skills, .team, .contect {
+    height: 100vh;
+    width: 100%;
+    
+}
+                    /* header */
 .home header {   
     display: flex;
     position: fixed;
@@ -39,14 +44,11 @@
     color: #fff;
 }
 
-
-
 header .max-widith {
     display: flex;
     width: 100%;
     align-items: center;
 }
-
 
 .mainnav .logo{
     width: 30%;
@@ -72,7 +74,7 @@ header .max-widith  a {
 header a span {
     color: crimson;
 }
-ul {
+.menu-ul {
     list-style: none;
     display: flex;
 }
@@ -86,11 +88,11 @@ ul {
 .mainnav .half-nav ul li a:hover {
     color:  rgb(250, 10, 10);
 }
+                    /* home page one */
 
-
-.home section {
+.home .sechome {
     width: 100%;
-    height: 80%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,31 +100,27 @@ ul {
     justify-content: flex-start;
     padding-left: 20px;
 }
-section .max-widith  p {
+.sechome .max-widith  p {
     padding: 10px;
     width: 100%;
 }
-section .max-widith h1{
+.sechome .max-widith h1{
     padding: 10px;
     width: 100%;
     font-size: 48px;
 }
-section .max-widith div {
+.sechome .max-widith div {
     padding: 10px;
     width: 100%;
 }
-section .max-widith h3 {
+.sechome .max-widith h3 {
 
     padding: 10px;
 }
-section .max-widith h3 span {
+.sechome .max-widith h3 span {
     color: crimson;
 }
-
-
-                                 /* hader */
-
-section .max-widith button {
+.sechome .max-widith button {
     display: block;
     margin-left: 10px;
     margin-top: 10px;
@@ -136,48 +134,41 @@ section .max-widith button {
     transition: all .3s ease;
 
 }
-
-section .max-widith button:hover {
+.sechome .max-widith button:hover {
     background-color:rgba(216, 22, 22, 0) ;
     color:  rgb(216, 22, 22);
 }
 
-/* @keyframes change-border {
-    25% {
-        border-top-color: black ;
-        border-right-color: blue;
-        border-bottom-color:  red;
-        border-left-color:  white;
-
-    }
-    50% {
-        border-top-color: white ;
-        border-right-color: black;
-        border-bottom-color:  blue;
-        border-left-color:  red;
-    }
-    75% {
-        border-top-color: red ;
-        border-right-color: white;
-        border-bottom-color:  black;
-        border-left-color:  blue;
-    }
-    100% {
-        border-top-color: blue ;
-        border-right-color: red;
-        border-bottom-color:  white;
-        border-left-color:  black;
-    }
-    
-}    */
-
-.about, .Serveses, .skills, .team, .contect {
-    height: 100vh;
-    width: 100%;
+                            /*   About page    */
+.about{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-footer {
     width: 100%;
     height: 30px;
@@ -187,6 +178,7 @@ section .max-widith button:hover {
     align-items: center;
     justify-content: center;
 }
+
 @media(max-width: 947px){
     
 .mainnav .menu-ul {
@@ -219,6 +211,9 @@ section .max-widith button:hover {
     display: inline-block;
     font-size: 25px;
     margin: 15px auto;
+}
+.mainnav .half-nav ul li a:hover {
+    color:  rgb(250, 10, 10);
 }
 
 }
