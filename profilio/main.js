@@ -41,3 +41,13 @@ function type() {
     })
 };
 type();
+
+function typet() {
+    var typed = new Typed(".typing2", {
+        strings:["Freelancer","Developer","Youtuber","Bloger"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true,
+    })
+};
+typet();
