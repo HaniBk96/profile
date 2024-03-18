@@ -13,7 +13,7 @@
 .home {
     height: 100vh;
     width: 100%;
-    background-image: url(/imges/back-g3.jpg);
+    background-image: url(imges/back-g3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color:#fff;
@@ -22,6 +22,7 @@
 .about, .Serveses, .skills, .team, .contect {
     height: 100vh;
     width: 100%;
+    padding: 50px 0;
     
 }
                     /* header */
@@ -42,9 +43,6 @@
     background-color: crimson;
 }
 .hanibknav a span {
-    color: #fff;
-}
-.mainnav.hanibknav ul li a:hover {
     color: #fff;
 }
 
@@ -88,7 +86,10 @@ header a span {
     font-weight: 500px;
 }
 .mainnav .half-nav ul li a:hover {
-    color:  rgb(250, 10, 10);
+    color:  red;
+}
+.hanibknav ul li a:hover {
+    color: #fff;
 }
                     /* home page  */
 
@@ -149,17 +150,21 @@ header a span {
 .about .max-widith .about-title {
     height: 30%;
     width: 100%;
-    padding-top: 7%;
     text-align: center;
+    padding-top: 5%;
 }
     .about-title h1 {
         width: 100%;
         padding: 5px;
+        letter-spacing: 2px;
 }
+    .about-title h3 { 
+        font-size: .8em;
+        width: 100%;
+    }
     .about-title h3 span {
         color: crimson;
-        padding: 5px;
-
+        padding: 2px;
 }
 .about .max-widith .about-content {
     display: flex;
@@ -168,42 +173,66 @@ header a span {
 }
 .about .max-widith .about-content .left-about{
     height: 100%;
-    width: 50%;
+    width: 40%;
 }
     .about .max-widith .about-content .left-about img {
-        width: 90%;
+        width: 80%;
         height: 90%;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: 1s ease;
 }
+
 .about .max-widith .about-content .right-about{
     height: 100%;
-    width: 50%;
-    padding: 20px;
-}
-.about .max-widith .about-content .right-about h4{
-
+    width: 60%;
     padding: 10px;
 }
+.about .max-widith .about-content .right-about h4,p,a {
+    padding: 20px 0;
+}
+.about .max-widith .about-content .right-about h4 span {
+    color: crimson;
+}
+.about .max-widith .about-content .right-about a {
+    text-decoration: none;
+    background-color:rgb(216, 22, 22) ;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 2px solid rgb(216, 22, 22);
+    margin-top: 10px;
+    transition: all .3s ease;
 
+}
+.about .max-widith .about-content .right-about a:hover {
+        color:  rgb(216, 22, 22);
+        background: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* this is serves */
+.Serveses {
+    background-color: black;
+    color: #fff;
+}
+.Serveses .max-widith {
+    height: 100%;
+}
+.Serveses .max-widith .about-title {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+}
+    .Serveses-title h1 {
+        width: 100%;
+        padding: 5px;
+        letter-spacing: 2px;
+}
+    .Serveses-title h3 { 
+        font-size: .8em;
+        width: 100%;
+    }
 
 
 
@@ -221,7 +250,7 @@ header a span {
     justify-content: center;
 }
 
-@media(max-width: 650px){
+@media(max-width: 700px){
     
 .mainnav .menu-ul {
     position: fixed;
@@ -257,5 +286,44 @@ header a span {
 .mainnav .half-nav ul li a:hover {
     color:  rgb(250, 10, 10);
 }
+
+.about{
+padding: 0;
+height: 100vh;
+}
+.about .max-widith {
+height: 100%;
+width: 90%;
+margin: 10px auto;
+}
+.about .max-widith .about-title {
+height: 10%;
+width: 100%;
+padding-top: 5%;
+}
+.about .max-widith .about-content{
+display: block;
+height: 80%;
+width: 100%;
+}
+.about .max-widith .about-content .left-about{
+height: 50%;
+width: 100%;
+}
+.about .max-widith .about-content .left-about img{
+    height: 100%;
+    width: 100%;
+}
+.about .max-widith .about-content .right-about{
+height: 50%;
+width: 100%;
+padding: 20px 0;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: flex-start;
+}
+
+
 
 }

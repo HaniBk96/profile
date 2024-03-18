@@ -16,9 +16,9 @@ window.onscroll = function () {
 
 
             //   add menu btn  
-let menuul = document.getElementById("menu-ul");
+let menuul  = document.getElementById("menu-ul");
 let fontmen = document.getElementById("font-menu");
-let i =document.querySelector("#font-menu i")
+let i       = document.querySelector("#font-menu i");
 
 fontmen.onclick = function() {
     menuul.classList.add("active");
@@ -32,22 +32,22 @@ fontmen.onclick = function() {
 
         //   add typing short 
 
-function type() {
-    var typed = new Typed(".typing", {
-        strings:["Freelancer","Developer","Youtuber","Bloger"],
-        typeSpeed:100,
-        backSpeed:60,
-        loop:true,
-    })
-};
-type();
+// function type() {
+//     var typed = new Typed(".typing", {
+//         strings:["Freelancer","Developer","Youtuber","Bloger"],
+//         typeSpeed:100,
+//         backSpeed:60,
+//         loop:true,
+//     });
+// };
+// type();
 
-function typet() {
-    var typed = new Typed(".typing2", {
-        strings:["Freelancer","Developer","Youtuber","Bloger"],
-        typeSpeed:100,
-        backSpeed:60,
-        loop:true,
-    })
-};
-typet();
+// function typet() {
+//     var typed = new Typed(".typing2", {
+//         strings:["Freelancer","Developer","Youtuber","Bloger"],
+//         typeSpeed:100,
+//         backSpeed:60,
+//         loop:true,
+//     });
+// };
+// typet();
