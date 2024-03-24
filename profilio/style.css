@@ -22,7 +22,7 @@
 .about, .Serveses, .skills, .team, .contect {
     height: 100vh;
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0;
     
 }
                     /* header */
@@ -149,18 +149,19 @@ header a span {
     height: 100%;
 }
 .about .max-widith .about-title {
-    height: 30%;
+    height: 20%;
     width: 100%;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2%;
 }
     .about-title h1 {
         width: 100%;
         padding: 5px;
         letter-spacing: 2px;
+        font-size: 3em;
 }
     .about-title h3 { 
-        font-size: .8em;
+        font-size: 1.5em;
         width: 100%;
     }
     .about-title h3 span {
@@ -169,8 +170,10 @@ header a span {
 }
 .about .max-widith .about-content {
     display: flex;
-    height: 70%;
+    padding: 5px;
+    height: 80%;
     width: 100%;
+    padding-top: 2%;
 }
 .about .max-widith .about-content .left-about{
     height: 100%;
@@ -270,23 +273,237 @@ header a span {
 }
 .Serveses-content div h3,h4,p{
     font-weight: 500;
+    padding: 5px;
+    display: block;
 }
 .Serveses-content div h3{
 color: crimson;
 font-size: 3em;
-padding: 5px;
-display: block;
 transition: all .3s ease;
 }
 .Serveses-content div h4{
 font-size: 1.5em;
-padding: 5px;
-display: block;
 }
-.Serveses-content div p{
-padding: 5px;
-display: block;
+
+            /* this is skiles */
+
+.skills .max-widith {
+    height: 100%;
 }
+.skills .max-widith .skills-title {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+    .skills-title h1 {
+        width: 100%;
+        padding: 5px;
+        letter-spacing: 2px;
+        font-size: 3em;
+}
+    .skills-title h3 { 
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .skills-title h3 span {
+        color: crimson;
+        padding: 2px;
+}
+.skills-content {
+    display: flex;
+    padding: 5px;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+    width: 45%;
+    height: 90%;
+    justify-content: center;
+}
+.skills-content .left h4,p{
+    padding: 25px 0;
+    display: block;
+}
+.skills-content .left a {
+    text-decoration: none;
+    background-color:rgb(216, 22, 22) ;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(216, 22, 22);
+    margin-top: 10px;
+    transition: all .3s ease;
+
+}
+.skills-content .left a:hover {
+        color:  rgb(216, 22, 22);
+        background: none;
+}
+.skills-content .right{
+    width: 50%;
+
+}
+.skills-content .right h1{
+    width: 100%;
+    height: 10%;
+}
+.skills-content .right dl{
+    width: calc(100% - 10px);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.skills-name{
+    width: 100%;
+}
+.skills-name:nth-of-type(1):after {     /* html */
+    content: "90%";
+    display: block;
+    height: 1rem;
+    float: right;
+    direction: rtl;
+    position: relative;
+    top: 3px;
+}
+.skills-name:nth-of-type(2):after {     /* css */
+    content: "80%";
+    display: block;
+    height: 1rem;
+    float: right;
+    direction: rtl;
+    position: relative;
+    top: 3px;
+}
+.skills-name:nth-of-type(3):after {     /* javasceript */
+    content: "70%";
+    display: block;
+    height: 1rem;
+    float: right;
+    direction: rtl;
+    position: relative;
+    top: 3px;
+}
+.skills-name:nth-of-type(4):after {     /* git */
+    content: "50%";
+    display: block;
+    height: 1rem;
+    float: right;
+    direction: rtl;
+    position: relative;
+    top: 3px;
+}
+.skills-precent {
+    font-size: 0;
+    height: 1rem;
+    position: relative;
+    top: -0.8rem;
+    transition: 3s linear;
+}
+.skills-list dd:nth-of-type(1)  {
+    background-color: red;
+    height: 16px;
+    width: 50%;
+}
+.skills-list dd:nth-of-type(2)  {
+    background-color: green;
+    height: 16px;
+    width: 50%;
+
+}
+.skills-list dd:nth-of-type(3) {
+    background-color: yellow;
+    height: 16px;
+    width: 50%;
+
+}
+.skills-list dd:nth-of-type(4)  {
+    background-color: blue;
+    height: 16px;
+    width: 50%;
+
+}
+
+                /* this is teams */
+
+.team {
+    background-color: black;
+    color: #fff;
+}
+.team .max-widith {
+    height: 100%;
+}
+.team .max-widith .team-title {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+    .team-title h1 {
+        width: 100%;
+        padding: 5px;
+        letter-spacing: 2px;
+        font-size: 3em;
+}
+    .team-title h3 { 
+        font-size: 1.5em;
+        width: 100%;
+}
+    .team-title h3 span {
+        color: crimson;
+        padding: 2px;
+}
+.team-content {
+    display: flex;
+    padding: 5px;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.team-content div{
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    width: calc(100% / 6);
+    height: 50%;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all .3s ease;
+}
+.team-content div:hover{
+    background-color: crimson;
+    color: #fff;
+    transform: scale(1.05);
+}
+.team .card img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid crimson;
+    padding: 2px; 
+}
+.team .card h3,p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 
 
@@ -305,7 +522,9 @@ display: block;
 }
 
 @media(max-width: 700px){
-    
+.home{
+    background-color: black;
+}   
 .mainnav .menu-ul {
     position: fixed;
     height: 100vh;
@@ -349,15 +568,16 @@ height: 100vh;
 height: 100%;
 width: 90%;
 margin: 10px auto;
+padding: 0px;
+padding-top: 20%;
 }
 .about .max-widith .about-title {
 height: 10%;
 width: 100%;
-padding-top: 5%;
 }
 .about .max-widith .about-content{
 display: block;
-height: 80%;
+height: 70%;
 width: 100%;
 }
 .about .max-widith .about-content .left-about{
@@ -378,7 +598,22 @@ flex-direction: column;
 align-items: flex-start;
 }
             /* this is servess */
-
-
-
+.Serveses-content {
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Serveses-content div {
+    width: calc(100% - 20px);
+    height: 33%;
+    margin-bottom: 10px;
+}
+.Serveses-content div h3{
+    font-size: 1.5em;
+}
+.Serveses-content div h4{
+    font-size: 1em;
+}
 }

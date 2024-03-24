@@ -51,3 +51,10 @@ function typet() {
     });
 };
 typet();
+
+let skillpers = document.querySelectorAll(".skills-precent");
+
+skillpers.forEach(function(e){
+    e.animate({width:e.getAttributeNames("data-percent")})
+
+});
