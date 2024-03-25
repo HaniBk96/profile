@@ -51,4 +51,3 @@ function typet() {
     });
 };
 typet();
-
