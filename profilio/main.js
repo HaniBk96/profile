@@ -7,9 +7,11 @@ let btn = document.getElementById("top-button");
 
 window.onscroll = function () {
     if (window.scrollY >= 200) {
+
         header.classList.add("hanibknav");
         btn.style.display = "block";
     } else {
+        
         header.classList.remove("hanibknav");
         btn.style.display = "none";
     }

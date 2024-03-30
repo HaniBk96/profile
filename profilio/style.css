@@ -117,12 +117,14 @@ header a span {
     font-size: 1em;
     font-weight: 500px;
 }
-.mainnav .half-nav ul li a:hover {
+.menu-ul li a:hover{
     color:  red;
 }
-.hanibknav ul li:hover a{
-    color: #fff;
+.hanibknav .menu-ul li a:hover{
+    color: #111;
+    font-weight: 600;
 }
+
                     /* home page  */
 
 .home .sechome {
