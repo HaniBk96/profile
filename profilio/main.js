@@ -3,17 +3,25 @@
 
 let header = document.getElementById("main-header");
 let lio = document.getElementById("lio");
-
+let btn = document.getElementById("top-button");
 
 window.onscroll = function () {
-    if (window.scrollY >= 50) {
-
+    if (window.scrollY >= 200) {
         header.classList.add("hanibknav");
-        
+        btn.style.display = "block";
     } else {
         header.classList.remove("hanibknav");
+        btn.style.display = "none";
     }
 }
+
+btn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth",
+    });
+}
+
 
 
             //   add menu btn  

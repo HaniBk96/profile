@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family:sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: tahoma, Arial;
     position: relative;
@@ -29,6 +32,7 @@ body{
     background: none;
     color: red;
     border: 2px solid red;
+    filter: brightness(90%);
 
 }
 .max-widith{
@@ -583,6 +587,20 @@ font-size: 1.5em;
     height: 20%;
     width: 100%;
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.contect-content .left div i{
+    color: crimson;
+    width: 30%;
+    text-align: center;
+    height: 100%;
+}
+.contect-content .left div h5,p{
+    height: 50%;
+    width: 70%;
 }
 
 
@@ -646,7 +664,7 @@ font-size: 1.5em;
 .main-footer {
     width: 100%;
     height: 30px;
-    background-color: aqua;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
